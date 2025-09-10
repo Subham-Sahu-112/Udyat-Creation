@@ -1,0 +1,291 @@
+/* Creative Talent Section */
+.creative-talent-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.creative-talent-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+/* Text Content */
+.text-content {
+  padding-right: 2rem;
+}
+
+.section-text-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: red;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #5a6c7d;
+}
+
+.description p {
+  margin-bottom: 1.5rem;
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Stats Content */
+.stats-content {
+  background: gray;
+  padding: 2.5rem;
+  border-radius: 20px;
+  color: white;
+  /* box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3); */
+}
+
+.stats-header {
+  margin-bottom: 2rem;
+}
+
+.stats-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  /* color: #16a085; */
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  /* color: #2c3e50; */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Video Projects */
+.video-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+  transform: scale(1.05);
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .play-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  background: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  transform: scale(1.1);
+  background: #ffeb3b;
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.video-subtitle {
+  font-size: 0.9rem;
+  color: #16a085;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .text-content {
+    padding-right: 0;
+  }
+  
+  .stats-content {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .creative-talent-section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .stats-content {
+    padding: 2rem;
+  }
+  
+  .stats-grid {
+    gap: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .video-projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .video-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .creative-talent-section {
+    padding: 2rem 0;
+  }
+
+  .section-text-title {
+    margin-bottom: 1rem;
+  }
+
+  .description p {
+    margin-bottom: 0.5rem;
+  }
+
+  .content-wrapper {
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .stats-content {
+    padding: 1.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.7rem;
+  }
+  
+  .video-thumbnail {
+    height: 180px;
+  }
+  
+  .video-info {
+    padding: 1.25rem;
+  }
+  
+  .video-title {
+    font-size: 1.3rem;
+  }
+}

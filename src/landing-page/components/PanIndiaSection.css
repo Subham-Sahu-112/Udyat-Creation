@@ -1,0 +1,259 @@
+/* Pan India Section */
+.pan-india-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+  position: relative;
+}
+
+.pan-india-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #5a6c7d;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Cities Grid */
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.city-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 200px;
+}
+
+.city-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.city-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.city-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover .city-image img {
+  transform: scale(1.1);
+}
+
+.city-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1)
+  );
+  padding: 0.7rem;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.3s ease;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffc107;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.city-card:hover .city-name {
+  color: #ffeb3b;
+  transform: translateY(-5px);
+}
+
+/* CTA Container */
+.cta-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.quote-button {
+  background: #16a085;
+  color: white;
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(22, 160, 133, 0.4);
+}
+
+.quote-button:hover {
+  background: #138d75;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(22, 160, 133, 0.6);
+}
+
+.quote-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .cities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+  }
+
+  .city-card {
+    height: 220px;
+  }
+
+  .city-name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pan-india-section {
+    padding: 3rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .cities-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .city-card {
+    height: 200px;
+  }
+
+  .city-overlay {
+    padding: 1.5rem;
+  }
+
+  .city-name {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .quote-button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pan-india-section {
+    padding: 2rem 0;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .cities-grid {
+    margin-bottom: 2rem;
+  }
+
+  .city-card {
+    height: 180px;
+  }
+
+  .city-name {
+    font-size: 1.2rem;
+  }
+
+  .cta-container {
+    margin-top: 1rem;
+  }
+
+  .quote-button {
+    padding: 0.9rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for better performance */
+.city-card {
+  will-change: transform;
+}
+
+.city-image img {
+  will-change: transform;
+}
