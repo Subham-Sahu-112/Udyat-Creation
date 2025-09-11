@@ -1,6 +1,6 @@
 /* Pan India Section */
 .pan-india-section {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background: #f8f9fa;
   position: relative;
 }
@@ -18,17 +18,17 @@
 }
 
 .main-title {
-  font-size: 3.5rem;
+  font-size: 2.3rem;
   font-weight: 900;
   color: red;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
 .section-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #5a6c7d;
   line-height: 1.6;
   max-width: 900px;
@@ -41,7 +41,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .city-card {
@@ -114,11 +114,11 @@
 /* CTA Container */
 .cta-container {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .quote-button {
-  background: #16a085;
+  background: #ff3e3e;
   color: white;
   padding: 1.2rem 3rem;
   border: none;
@@ -133,7 +133,7 @@
 }
 
 .quote-button:hover {
-  background: #138d75;
+  background: red;
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(22, 160, 133, 0.6);
 }

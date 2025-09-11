@@ -1,18 +1,18 @@
 /* Our Work Section */
 .our-work-section {
   background: gray;
-  padding: 4rem 0;
+  padding: 2rem 0;
   overflow: hidden;
   position: relative;
 }
 
 .work-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .work-title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: white;
   text-transform: uppercase;
@@ -29,10 +29,11 @@
 }
 
 .work-slider {
+  width: fit-content;
   display: flex;
   gap: 2rem;
+  padding: 2rem 0;
   animation: slideLeft 25s linear infinite;
-  width: fit-content;
 }
 
 /* Infinite sliding animation */
@@ -52,7 +53,7 @@
 
 /* Work Cards */
 .work-card {
-  min-width: 350px;
+  min-width: 330px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -69,7 +70,7 @@
 
 .work-thumbnail {
   position: relative;
-  height: 220px;
+  height: 200px;
   overflow: hidden;
   background: linear-gradient(45deg, #667eea, #764ba2);
 }
@@ -122,12 +123,12 @@
 }
 
 .work-info {
-  padding: 1.5rem;
+  padding: 0.8rem 2rem;
   text-align: left;
 }
 
 .work-project-title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #2c3e50;
   margin-bottom: 0.5rem;
@@ -136,7 +137,7 @@
 }
 
 .work-project-subtitle {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #16a085;
   font-weight: 600;
   text-transform: uppercase;

@@ -58,18 +58,26 @@
 }
 
 .nav-menu a:hover {
-  color: #16a085;
+  color: rgb(255, 75, 75);
 }
 
 .nav-cta {
-  background: red !important;
+  background-color: rgb(255, 47, 47) !important;
   color: white !important;
   padding: 0.75rem 1.5rem !important;
-  border-radius: 5px;
+  border-radius: 5px !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  transform: translateY(0) !important;
+  transition: all 0.3s ease !important;
+  will-change: transform, background-color;
 }
 
 .nav-cta:hover {
-  background: #138d75 !important;
+  background-color: rgb(200, 20, 20) !important;
+  color: white !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 5px 15px rgba(255, 47, 47, 0.4) !important;
 }
 
 /* Hamburger Menu */
@@ -163,7 +171,14 @@
   .nav-cta {
     margin: 1rem !important;
     border-radius: 8px !important;
-    border: 2px solid red !important;
+    border: 2px solid rgb(255, 47, 47) !important;
+    transition: all 0.3s ease !important;
+    transform: translateY(0) !important;
+  }
+
+  .nav-cta:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 3px 10px rgba(255, 47, 47, 0.4) !important;
   }
 
   .menu-overlay {

@@ -1,50 +1,55 @@
-import React from 'react';
-import './OurProcessSection.css';
+import React from "react";
+import "./OurProcessSection.css";
 
 const OurProcessSection = () => {
   const processSteps = [
     {
       id: 1,
       icon: "📄",
-      title: "The Brief",
-      description: "You fill out a short campaign brief – and have a quick call with our team."
+      title: "Briefing ",
+      description:
+        "Share your campaign goals with us, and we’ll align on the vision.",
     },
     {
       id: 2,
       icon: "💡",
-      title: "The Ideation",
-      description: "We send you the concept and scripts for approval within days."
+      title: "Concept & Ideation",
+      description:
+        "Our creative team develops unique concepts and scripts for quick approval.",
     },
     {
       id: 3,
       icon: "🎬",
-      title: "The Shoot",
-      description: "We assign creative professionals and crew and fix the shoot dates for each leg of the project."
+      title: "Production",
+      description:
+        "Skilled crews and directors bring the vision to life on shoot day.",
     },
     {
       id: 4,
       icon: "✂️",
-      title: "The Edit",
-      description: "Our post-production professionals get to work, editing and refining your video, based on your feedback."
+      title: "Post-Production",
+      description:
+        "Editors and designers polish your film with professional finesse.",
     },
     {
       id: 5,
       icon: "📹",
-      title: "The Result",
-      description: "We deliver the final videos."
-    }
+      title: "Final Delivery",
+      description: "High-quality ad films ready to launch across all platforms.",
+    },
   ];
 
   return (
     <section className="our-process-section">
       <div className="process-container">
         <div className="process-header">
-          <h2 className="process-title">OUR PROCESS</h2>
+          <h2 className="process-title">OUR PROVEN WORKFLOW</h2>
           <p className="process-subtitle">
-            We use Tech at all Stages – to Make the Process Quicker and Simpler Than Ever Before.
+            We use technology and creativity at every step to deliver ad films
+            faster and better.
           </p>
         </div>
-        
+
         <div className="process-steps">
           {processSteps.map((step) => (
             <div key={step.id} className="process-step">
@@ -58,7 +63,7 @@ const OurProcessSection = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="process-cta">
           <button className="talk-advisor-btn">Talk to Advisor</button>
         </div>

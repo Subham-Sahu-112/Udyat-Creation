@@ -28,7 +28,7 @@ export default function HeroSection() {
     // Handle form submission here
   };
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <video 
         className="video" 
         src={isMobile ? 'https://ik.imagekit.io/wiqxywfta/video1.mp4?updatedAt=1757508412727' : 'https://ik.imagekit.io/wiqxywfta/video2.mp4?updatedAt=1757508420963'}
@@ -143,9 +143,9 @@ export default function HeroSection() {
                 <option value="above-25l">Above ₹25 Lakhs</option>
               </select>
 
-              <button type="submit" className="submit-btn">
+              <a className="submit-btn">
                 Submit Details
-              </button>
+              </a>
             </form>
           </div>
         </div>

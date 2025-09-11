@@ -208,11 +208,12 @@
 .submit-btn {
   background: red;
   color: white;
-  padding: 1.1rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 8px;
   font-size: 1.05rem;
   font-weight: 600;
+  text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -221,9 +222,9 @@
 }
 
 .submit-btn:hover {
-  background: linear-gradient(135deg, #138d75 0%, #117a65 100%);
+  background: red;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(22, 160, 133, 0.4);
+  box-shadow: 0 8px 25px rgba(160, 22, 22, 0.4);
 }
 
 .submit-btn:active {

@@ -35,30 +35,30 @@ const CreativeTalentSection = () => {
           </div>
 
           {/* Right Stats */}
-          <div className="stats-content">
+          <div className="talent-stats-content">
             <div className="stats-header">
               <h3>Across India. Across Genres. Across Industries.</h3>
             </div>
             
-            <div className="stats-grid">
+            <div className="talent-stats-grid">
               <div className="stat-item">
-                <div className="stat-number">700+</div>
-                <div className="stat-label">Total Videos</div>
+                <div className="stat-number">800+</div>
+                <div className="talent-stat-label">Total Videos</div>
               </div>
               
               <div className="stat-item">
-                <div className="stat-number">40+</div>
-                <div className="stat-label">Cities</div>
+                <div className="stat-number">50+</div>
+                <div className="talent-stat-label">Cities</div>
               </div>
               
               <div className="stat-item">
-                <div className="stat-number">125+</div>
-                <div className="stat-label">Clients</div>
+                <div className="stat-number">150+</div>
+                <div className="talent-stat-label">Clients</div>
               </div>
               
               <div className="stat-item">
-                <div className="stat-number">10+</div>
-                <div className="stat-label">Languages</div>
+                <div className="stat-number">12+</div>
+                <div className="talent-stat-label">Languages</div>
               </div>
             </div>
           </div>

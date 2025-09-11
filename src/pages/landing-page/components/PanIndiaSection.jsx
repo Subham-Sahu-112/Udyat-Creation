@@ -36,7 +36,7 @@ const PanIndiaSection = () => {
   ];
 
   return (
-    <section className="pan-india-section">
+    <section className="pan-india-section" id='locations'>
       <div className="container">
         <div className="section-header">
           <h2 className="main-title">WE PRODUCE PAN-INDIA.</h2>

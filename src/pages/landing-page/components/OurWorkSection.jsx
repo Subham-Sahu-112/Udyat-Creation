@@ -46,7 +46,7 @@ const OurWorkSection = () => {
     // Duplicate for infinite scroll
     {
       id: 6,
-      title: "CREATIVE VIDEO 1",
+      title: "Ayurvedic Joint Care",
       subtitle: "VISUAL PRODUCTION",
       thumbnail: "https://img.youtube.com/vi/H5FifFIjm0U/maxresdefault.jpg",
       videoUrl: "https://youtu.be/H5FifFIjm0U?si=A77qSgbvmx2u7dpF",
@@ -54,7 +54,7 @@ const OurWorkSection = () => {
     },
     {
       id: 7,
-      title: "CREATIVE VIDEO 2",
+      title: "Gold Premium Oil",
       subtitle: "MARKETING CAMPAIGN",
       thumbnail: "https://img.youtube.com/vi/rYqOmu-ac-8/maxresdefault.jpg",
       videoUrl: "https://youtu.be/rYqOmu-ac-8?si=NIOnaAc-d9SIhfKw",
@@ -62,7 +62,7 @@ const OurWorkSection = () => {
     },
     {
       id: 8,
-      title: "CREATIVE VIDEO 3",
+      title: "Craveman Ice Cream",
       subtitle: "BRAND SHOWCASE",
       thumbnail: "https://img.youtube.com/vi/wPq_KMavBrs/maxresdefault.jpg",
       videoUrl: "https://youtu.be/wPq_KMavBrs?si=pgBqfKkfrFnxwlzE",
@@ -75,7 +75,7 @@ const OurWorkSection = () => {
   };
 
   return (
-    <section className="our-work-section">
+    <section className="our-work-section" id="our-work">
       <div className="work-header">
         <h2 className="work-title">OUR WORK</h2>
       </div>

@@ -15,9 +15,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="nav-logo">
+        <a href="/#home" className="nav-logo">
           <img className="logo-icon" src="/1.png" alt="logo" />
-        </div>
+        </a>
         
         {/* Hamburger Menu Button */}
         <button 
@@ -32,19 +32,19 @@ export default function Navbar() {
 
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <a href="#work" onClick={closeMenu}>Our Work</a>
+            <a href="/#our-work" onClick={closeMenu}>Our Work</a>
           </li>
           <li>
-            <a href="#clients" onClick={closeMenu}>Our Clients</a>
+            <a href="/our-designs" onClick={closeMenu}>Our Digital marketing</a>
           </li>
           <li>
-            <a href="#locations" onClick={closeMenu}>Locations</a>
+            <a href="/#locations" onClick={closeMenu}>Locations</a>
           </li>
           <li>
-            <a href="#why-hire-us" onClick={closeMenu}>Why Hire Us?</a>
+            <a href="/#why-hire-us" onClick={closeMenu}>Why Hire Us?</a>
           </li>
           <li>
-            <a href="#quote" className="nav-cta" onClick={closeMenu}>
+            <a href='/#home' style={{cursor: 'pointer'}} className="nav-cta" onClick={closeMenu}>
               Get A Quote
             </a>
           </li>
