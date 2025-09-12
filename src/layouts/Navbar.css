@@ -199,7 +199,7 @@
 @media (max-width: 480px) {
   .nav-menu {
     width: 100%;
-    top: 90px;
+    top: 80px;
   }
 
   .logo-icon {
@@ -213,5 +213,9 @@
 
   .menu-overlay {
     top: 90px; /* Match the navbar height */
+  }
+
+  .nav-cta {
+    width: 50% !important;
   }
 }
