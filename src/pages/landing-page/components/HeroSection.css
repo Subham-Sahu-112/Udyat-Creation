@@ -342,14 +342,15 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding-top: 5rem;
-    /* padding-bottom: 2rem; */
+    height: 100%;
+    min-height: 0;
+    padding-top: 3rem;
   }
   
   .hero-container {
     flex-direction: column;
     gap: 0.8rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .hero-title {
