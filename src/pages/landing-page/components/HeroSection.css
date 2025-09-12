@@ -375,6 +375,7 @@
 
   .phone-input {
     flex-direction: row;
+    gap: 5px;
   }
 
   .quote-form input,
