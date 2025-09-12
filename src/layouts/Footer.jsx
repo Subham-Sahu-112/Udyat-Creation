@@ -33,8 +33,9 @@ const Footer = () => {
           {/* Right Section - Contact Info */}
           <div className="footer-right">
             <div className="contact-info">
-              <p className="phone">+91 9845966077</p>
-              <p className="email">shoot@udyattCreation.in</p>
+              <p className="phone">+91 8746935667</p>
+              <p className="email">udyyatt@Gmail.com</p>
+              <p className="email">Enquiry@adfilmmaker.in</p>
             </div>
             
             <div className="social-links">

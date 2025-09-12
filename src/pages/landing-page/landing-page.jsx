@@ -13,7 +13,7 @@ import Footer from "../../layouts/Footer";
 
 const LandingPage = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919845966077"; // Replace with your WhatsApp business number
+    const phoneNumber = "918746935667"; // Replace with your WhatsApp business number
     const message = "Hi! I'm interested in your video production services. Can you help me?";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
