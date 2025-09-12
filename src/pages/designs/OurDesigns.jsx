@@ -91,9 +91,9 @@ const OurDesign = () => {
             {/* Video Projects Section */}
             <div id="video" className="projects-section">
               <h3 className="section-title">📹 Video Production Portfolio</h3>
-              <div className="design-grid">
+              <div className="design-grid design-grid-video">
                 {videoProjects.map((project) => (
-                  <div key={project.id} className="design-card video-card">
+                  <div key={project.id} className="design-card design-video-card">
                     <div className="design-video">
                       <video
                         src={project.videoSrc}
@@ -184,6 +184,24 @@ const OurDesign = () => {
                 </div>
               </div>
             )}
+
+            {/* Reel Part */}
+            <div className="reel-container">
+              <div className="reel-info">
+                <p>
+                  Delight in the rich, nutty flavor of our perfectly <b style={{color: "red"}}>Roasted
+                  Vermicelli !</b>
+                </p>
+                <p>
+                  <b style={{color: "red"}}>Crispy, Golden, and Ready to Elevate</b> your favorite snacks and
+                  desserts.
+                </p>
+                <p>
+                  It’s the perfect choice for <b style={{color: "red"}}>Quick, Delicious Treats</b> at home."
+                </p>
+              </div>
+              <video src="/reel-1.mp4" autoPlay loop muted></video>
+            </div>
 
             {/* Call to Action */}
             <div className="design-cta">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ContactForm from "./FormSubmit";
 import "./HeroSection.css";
 
 export default function HeroSection() {
@@ -52,7 +53,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <div className="quote-form-container">
+        {/* <div className="quote-form-container">
           <div className="quote-form">
             <h2 className="form-title">Get a Quote Today</h2>
             <form onSubmit={handleSubmit}>
@@ -146,9 +147,10 @@ export default function HeroSection() {
               <a className="submit-btn">
                 Submit Details
               </a>
-            </form>
-          </div>
-        </div>
+            </form> */}
+          {/* </div>
+        </div> */}
+        <ContactForm />
       </div>
     </section>
   );

@@ -10,10 +10,16 @@
 /* Projects Section */
 .projects-section {
   margin-bottom: 40px;
+  
 }
 
 .projects-section:last-of-type {
   margin-bottom: 40px;
+}
+
+#image {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(216, 216, 216);
 }
 
 .section-title {
@@ -188,17 +194,17 @@
   margin-left: 3px;
 }
 
-.video-card:hover .video-overlay {
+.design-video-card:hover .video-overlay {
   opacity: 0.9;
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.video-card .design-overlay {
+.design-video-card .design-overlay {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.video-card:hover .design-overlay {
+.design-video-card:hover .design-overlay {
   opacity: 1;
 }
 
@@ -312,6 +318,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  border-bottom: 2px solid rgb(148, 148, 148);
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
@@ -385,6 +392,35 @@
   margin: 0;
 }
 
+.reel-container {
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.reel-info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.reel-info p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reel-container video {
+  height: 100%;
+  border-radius: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .our-design-section {
@@ -435,12 +471,27 @@
 }
 
 @media (max-width: 480px) {
+  .our-design-section {
+    padding-top: 6rem;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+
+  .design-header {
+    margin-bottom: 1rem;
+  }
+
   .design-title {
-    font-size: 2rem;
+    letter-spacing: 0px;
+    font-size: 1.7rem;
   }
 
   .design-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 1.5rem;
   }
 
   .category-filter {
@@ -452,17 +503,32 @@
     min-width: 150px;
   }
 
+  .design-grid-video {
+    grid-template-columns: 1fr !important;
+  }
+
+  .design-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .design-cta h3 {
+    width: 100%;
     font-size: 1.4rem;
+    text-align: center;
   }
 
   .design-cta p {
+    width: 100%;
     font-size: 1rem;
   }
 
   .get-design-quote-btn {
     padding: 12px 30px;
     font-size: 1rem;
+  }
+
+  .projects-section {
+    margin-bottom: 2rem;
   }
 
   /* Modal responsive styles */
@@ -497,5 +563,27 @@
 
   .modal-description {
     font-size: 0.9rem;
+  }
+
+  .reel-container {
+    height: auto;
+    width: 350px;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .reel-info {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .reel-info p {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .reel-container video {
+    width: 100%;
   }
 }

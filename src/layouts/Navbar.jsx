@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <a href="/#home" className="nav-logo">
-          <img className="logo-icon" src="/1.png" alt="logo" />
+          <img className="logo-icon" src="/logo.png" alt="logo" />
         </a>
         
         {/* Hamburger Menu Button */}
