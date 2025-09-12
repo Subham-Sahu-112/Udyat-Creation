@@ -4,3 +4,241 @@
     align-self: flex-start;
     border: 2px solid white;
 }
+
+/* Success Animation */
+.success-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 0.6s ease-out;
+}
+
+.animated-checkmark {
+  margin-bottom: 30px;
+  animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3;
+  stroke: #22c55e;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #22c55e;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke: #22c55e;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+/* Error Animation */
+.error-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideInUp 0.6s ease-out;
+}
+
+.animated-cross {
+  margin-bottom: 30px;
+  animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+.cross {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3;
+  stroke: #ef4444;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #ef4444;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.cross__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke: #ef4444;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.cross__path {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 28;
+  stroke-dashoffset: 28;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+/* Text Styles */
+.success-title, .error-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+.success-title {
+  color: #22c55e;
+}
+
+.error-title {
+  color: #ef4444;
+}
+
+.success-message, .error-message {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 400px;
+  animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+
+/* Buttons */
+.submit-another-btn, .try-again-btn {
+  background: linear-gradient(135deg, #4a9b8e, #3a8b7e);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out 0.9s both;
+}
+
+.try-again-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.submit-another-btn:hover, .try-again-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.quote-form {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.submit-btn {
+  transition: all 0.3s ease;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #22c55e;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .success-animation, .error-animation {
+    padding: 40px 20px;
+  }
+  
+  .checkmark, .cross {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .success-title, .error-title {
+    font-size: 1.6rem;
+  }
+  
+  .success-message, .error-message {
+    font-size: 1rem;
+  }
+  
+  .submit-another-btn, .try-again-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

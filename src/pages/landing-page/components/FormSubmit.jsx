@@ -89,9 +89,67 @@ const ContactForm = () => {
 
   return (
     <div className="quote-form-container">
-      <div className="quote-form">
-        <h2 className="form-title">Get a Quote Today</h2>
-        <form onSubmit={handleSubmit}>
+      {/* Success Animation */}
+      {submitStatus === "success" && (
+        <div className="success-animation">
+          <div className="animated-checkmark">
+            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+              <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+              <path className="checkmark__check" fill="none" d="m14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+          </div>
+          <h2 className="success-title">Thank You!</h2>
+          <p className="success-message">Your inquiry has been submitted successfully. We'll get back to you within 24 hours!</p>
+          <button 
+            className="submit-another-btn"
+            onClick={() => {
+              setSubmitStatus(null);
+              setFormData({
+                firstName: "",
+                lastName: "",
+                email: "",
+                phone: "",
+                company: "",
+                designation: "",
+                lookingFor: "",
+                budget: "",
+              });
+            }}
+          >
+            Submit Another Quote
+          </button>
+        </div>
+      )}
+
+      {/* Error Animation */}
+      {submitStatus === "error" && (
+        <div className="error-animation">
+          <div className="animated-cross">
+            <svg className="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+              <circle className="cross__circle" cx="26" cy="26" r="25" fill="none"/>
+              <path className="cross__path cross__path--right" fill="none" d="m16,16 l20,20"/>
+              <path className="cross__path cross__path--right" fill="none" d="m16,36 l20,-20"/>
+            </svg>
+          </div>
+          <h2 className="error-title">Submission Failed</h2>
+          <p className="error-message">{errorMessage}</p>
+          <button 
+            className="try-again-btn"
+            onClick={() => {
+              setSubmitStatus(null);
+              setErrorMessage("");
+            }}
+          >
+            Try Again
+          </button>
+        </div>
+      )}
+
+      {/* Form - Only show when not success or error */}
+      {!submitStatus && (
+        <div className="quote-form">
+          <h2 className="form-title">Get a Quote Today</h2>
+          <form onSubmit={handleSubmit}>
           <div className="form-row">
             <input
               type="text"
@@ -191,59 +249,11 @@ const ContactForm = () => {
 
           {/* Changed from <a> to <button> for proper form submission */}
           <button type="submit" className="submit-btn" disabled={isSubmitting}>
-            {isSubmitting ? (
-              <>
-                <span className="loading-spinner"></span>
-                Submitting...
-              </>
-            ) : (
-              "Submit Details"
-            )}
+            {isSubmitting ? "Submitting..." : "Submit Details"}
           </button>
-          {/* Success Message */}
-          {submitStatus === "success" && (
-          <div className="success-message" style={{ display: "flex" }}>
-            <div className="message-icon">✅</div>
-            <div className="message-content">
-              <h3>Thank You!</h3>
-              <p>
-                Your inquiry has been submitted successfully. We'll get back to
-                you within 24 hours!
-              </p>
-            </div>
-          </div>
-          )}
-
-          {/* Error Message */}
-          {submitStatus === "error" && (
-          <div className="error-message" style={{ display: "flex" }}>
-            <div className="message-icon">❌</div>
-            <div className="message-content">
-              <h3>Submission Failed</h3>
-              <p>{errorMessage}</p>
-              <button
-                style={{
-                  marginTop: "10px",
-                  padding: "8px 12px",
-                  backgroundColor: "#ff4d4f",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                }}
-                className="retry-btn"
-                onClick={() => {
-                  setSubmitStatus(null);
-                  setErrorMessage("");
-                }}
-              >
-                Try Again
-              </button>
-            </div>
-          </div>
-          )}
         </form>
-      </div>
+        </div>
+      )}
     </div>
   );
 };
