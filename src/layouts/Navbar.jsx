@@ -19,7 +19,7 @@ export default function Navbar() {
           <img className="logo-icon" src="/logo.png" alt="logo" />
         </a>
 
-        <h3 style={{color: 'white'}}>UDYYATT CREATIONS</h3>
+        <h3>UDYYATT CREATIONS</h3>
         
         {/* Hamburger Menu Button */}
         <button 

@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(111, 111, 111, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   z-index: 1000;
   /* padding: 1rem 0; */
@@ -16,6 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-container h3 {
+  color: black;
 }
 
 .nav-logo {
@@ -125,7 +129,7 @@
 .hamburger-line {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 3px 0;
   transition: 0.3s;
   transform-origin: center;

@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Left Section - Company Info */}
           <div className="footer-left">
             <div className="footer-logo">
-              <img src='/1.png' className='foot-logo-icon' />
+              <img src='/logo.png' className='foot-logo-icon' />
             </div>
             
             <div className="footer-description">
