@@ -96,6 +96,7 @@
 }
 
 .nav-cta {
+  width: 15% !important;
   font-size: 0.95rem !important;
   background-color: rgb(255, 47, 47) !important;
   color: white !important;

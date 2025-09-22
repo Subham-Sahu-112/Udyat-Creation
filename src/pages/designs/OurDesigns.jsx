@@ -83,9 +83,6 @@ const OurDesign = () => {
           <div className="design-container">
             <div className="design-header">
               <h2 className="design-title">DIGITAL MARKETING PORTFOLIO</h2>
-              <p className="design-subtitle">
-                Showcasing our expertise in video production and graphic design
-              </p>
             </div>
 
             {/* Video Projects Section */}
