@@ -43,10 +43,40 @@
 }
 
 .nav-menu {
-  display: flex;
+  display: none;
   list-style: none;
   gap: 2rem;
   align-items: center;
+}
+
+.nav-menu.active {
+  display: flex;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(111, 111, 111, 0.95);
+  backdrop-filter: blur(15px);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.nav-menu.active li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu.active a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-menu a {
@@ -62,10 +92,11 @@
 }
 
 .nav-cta {
+  font-size: 0.95rem !important;
   background-color: rgb(255, 47, 47) !important;
   color: white !important;
-  padding: 0.75rem 1.5rem !important;
-  border-radius: 5px !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 30px !important;
   display: inline-block !important;
   text-decoration: none !important;
   transform: translateY(0) !important;
@@ -82,7 +113,7 @@
 
 /* Hamburger Menu */
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   background: none;
   border: none;
@@ -125,47 +156,19 @@
   z-index: 999;
 }
 
+.menu-overlay.active {
+  display: block;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .nav-container {
+    padding: 0 15px;
   }
 
-  .nav-menu {
-    position: fixed;
-    top: 100px; /* Position below navbar */
-    left: 0;
-    width: 100%; /* Full width */
-    height: auto;
-    max-height: 0;
-    overflow: hidden;
-    background: rgba(111, 111, 111, 0.95);
-    backdrop-filter: blur(15px);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0;
-    transition: max-height 0.3s ease;
-    z-index: 1000;
-    padding: 0;
-  }
-
-  .nav-menu.active {
-    max-height: 400px; /* Adjust based on content */
-    padding: 1rem 0;
-  }
-
-  .nav-menu li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-menu a {
-    display: block;
-    padding: 1rem;
-    font-size: 1.2rem;
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .logo-icon {
+    width: 120px;
+    height: 80px;
   }
 
   .nav-cta {
@@ -179,20 +182,6 @@
   .nav-cta:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 3px 10px rgba(255, 47, 47, 0.4) !important;
-  }
-
-  .menu-overlay {
-    display: block;
-    top: 100px; /* Start below navbar */
-  }
-
-  .nav-container {
-    padding: 0 15px;
-  }
-
-  .logo-icon {
-    width: 120px;
-    height: 80px;
   }
 }
 

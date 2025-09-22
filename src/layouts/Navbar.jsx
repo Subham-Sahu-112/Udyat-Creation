@@ -18,6 +18,8 @@ export default function Navbar() {
         <a href="/#home" className="nav-logo">
           <img className="logo-icon" src="/logo.png" alt="logo" />
         </a>
+
+        <h3 style={{color: 'white'}}>UDYYATT CREATIONS</h3>
         
         {/* Hamburger Menu Button */}
         <button 
@@ -51,7 +53,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Menu Overlay */}
-        {isMenuOpen && <div className="menu-overlay" onClick={closeMenu}></div>}
+        {isMenuOpen && <div className="menu-overlay active" onClick={closeMenu}></div>}
       </div>
     </nav>
   );

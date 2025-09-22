@@ -82,7 +82,7 @@ const OurDesign = () => {
         <section className="our-design-section">
           <div className="design-container">
             <div className="design-header">
-              <h2 className="design-title">OUR CREATIVE PORTFOLIO</h2>
+              <h2 className="design-title">DIGITAL MARKETING PORTFOLIO</h2>
               <p className="design-subtitle">
                 Showcasing our expertise in video production and graphic design
               </p>
@@ -90,10 +90,12 @@ const OurDesign = () => {
 
             {/* Video Projects Section */}
             <div id="video" className="projects-section">
-              <h3 className="section-title">📹 Video Production Portfolio</h3>
               <div className="design-grid design-grid-video">
                 {videoProjects.map((project) => (
-                  <div key={project.id} className="design-card design-video-card">
+                  <div
+                    key={project.id}
+                    className="design-card design-video-card"
+                  >
                     <div className="design-video">
                       <video
                         src={project.videoSrc}
@@ -134,7 +136,7 @@ const OurDesign = () => {
 
             {/* Image Projects Section */}
             <div id="image" className="projects-section">
-              <h3 className="section-title">🎨 Graphic Design Portfolio</h3>
+              <h3 className="section-title"> POSTER DESIGNING</h3>
               <div className="design-grid">
                 {imageProjects.map((project) => (
                   <div key={project.id} className="design-card image-card">
@@ -189,15 +191,19 @@ const OurDesign = () => {
             <div className="reel-container">
               <div className="reel-info">
                 <p>
-                  Delight in the rich, nutty flavor of our perfectly <b style={{color: "red"}}>Roasted
-                  Vermicelli !</b>
+                  Delight in the rich, nutty flavor of our perfectly{" "}
+                  <b style={{ color: "red" }}>Roasted Vermicelli !</b>
                 </p>
                 <p>
-                  <b style={{color: "red"}}>Crispy, Golden, and Ready to Elevate</b> your favorite snacks and
-                  desserts.
+                  <b style={{ color: "red" }}>
+                    Crispy, Golden, and Ready to Elevate
+                  </b>{" "}
+                  your favorite snacks and desserts.
                 </p>
                 <p>
-                  It’s the perfect choice for <b style={{color: "red"}}>Quick, Delicious Treats</b> at home."
+                  It’s the perfect choice for{" "}
+                  <b style={{ color: "red" }}>Quick, Delicious Treats</b> at
+                  home."
                 </p>
               </div>
               <video src="/reel-1.mp4" autoPlay loop muted></video>

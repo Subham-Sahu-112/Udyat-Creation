@@ -61,7 +61,7 @@
 /* Quote Form */
 .quote-form-container {
   width: 100%;
-  max-width: 550px;
+  max-width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
