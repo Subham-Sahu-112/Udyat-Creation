@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './PanIndiaSection.css';
 
 const PanIndiaSection = () => {
+  const Navigate = useNavigate();
   const cities = [
     {
       id: 1,
@@ -59,7 +61,7 @@ const PanIndiaSection = () => {
         </div>
 
         <div className="cta-container">
-          <button className="quote-button">Get a Quote</button>
+          <a className="quote-button" href="/#home">Get a Quote</a>
         </div>
       </div>
     </section>

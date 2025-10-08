@@ -83,6 +83,7 @@
 }
 
 .talk-advisor-btn {
+  text-decoration: none;
   background-color: red;
   color: white;
   padding: 15px 40px;

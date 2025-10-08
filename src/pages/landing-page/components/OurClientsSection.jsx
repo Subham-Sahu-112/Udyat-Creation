@@ -111,7 +111,7 @@ const OurClientsSection = () => {
         <div className="clients-cta">
           <h3>Ready to Join Our Family of Satisfied Clients?</h3>
           <p>Let's create something amazing together</p>
-          <button className="join-clients-btn">Start Your Project</button>
+          <a className="join-clients-btn" href='/#home'>Start Your Project</a>
         </div>
       </div>
     </section>

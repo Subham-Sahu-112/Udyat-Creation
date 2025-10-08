@@ -83,7 +83,7 @@ const FAQSection = () => {
               Engage, connect, and leave an impact with IndieVisual!
             </p>
           </div>
-          <button className="cta-button">Let's Go</button>
+          <a className="cta-button" href='/#home'>Let's Go</a>
         </div>
       </div>
     </section>

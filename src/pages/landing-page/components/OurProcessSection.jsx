@@ -65,7 +65,7 @@ const OurProcessSection = () => {
         </div>
 
         <div className="process-cta">
-          <button className="talk-advisor-btn">Talk to Advisor</button>
+          <a className="talk-advisor-btn" href="/#home">Talk to Advisor</a>
         </div>
       </div>
     </section>
